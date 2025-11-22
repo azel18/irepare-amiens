@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>iRépare Amiens - Rendez-vous & Devis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav class="nav">
+      <div class="logo-area">
+        <img src="images/logo-irepare.png" alt="iRépare Amiens" class="logo-img">
+        <div class="logo-text">iRépare Amiens</div>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="services.html">Services</a>
+        <a href="tarifs.html">Tarifs</a>
+        <a href="rdv.html">Rendez-vous</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <a class="btn-nav" href="mailto:irepare.amiens@gmail.com">✉️ Écrire</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <section>
+      <h2>Demande de rendez-vous ou de devis</h2>
+      <p class="section-intro">
+        Remplissez ce formulaire ou envoyez directement un mail à
+        <strong><a href="mailto:irepare.amiens@gmail.com">irepare.amiens@gmail.com</a></strong>.
+      </p>
+
+      <div class="form-card">
+        <form>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="nom">Nom / Prénom</label>
+              <input id="nom" type="text" placeholder="Ex : Dupont Karim">
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input id="email" type="email" placeholder="Votre adresse e-mail pour la réponse">
+            </div>
+            <div class="form-group">
+              <label for="adresse">Adresse d'intervention</label>
+              <input id="adresse" type="text" placeholder="Adresse complète à Amiens ou environs">
+            </div>
+            <div class="form-group">
+              <label for="appareil">Type d'appareil</label>
+              <select id="appareil">
+                <option>Smartphone</option>
+                <option>Tablette</option>
+                <option>Ordinateur portable</option>
+                <option>Ordinateur fixe</option>
+                <option>Autre</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="modele">Modèle</label>
+              <input id="modele" type="text" placeholder="Ex : iPhone 12, Samsung A52...">
+            </div>
+            <div class="form-group">
+              <label for="date">Jour souhaité</label>
+              <input id="date" type="date">
+            </div>
+          </div>
+
+          <div class="form-group" style="margin-top:10px;">
+            <label for="probleme">Décrivez le problème</label>
+            <textarea id="probleme" placeholder="Écran cassé, ne charge plus, problème de son, appareil qui ne s'allume plus, etc."></textarea>
+          </div>
+
+          <div class="form-footer">
+            <button type="button" class="btn btn-primary">
+              ✉ Envoyer la demande (à connecter plus tard)
+            </button>
+            <span>
+              Ce formulaire est visuel pour l’instant.  
+              Pour une vraie demande, envoyez un mail à <strong>irepare.amiens@gmail.com</strong>.
+            </span>
+          </div>
+        </form>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div>© <span id="year"></span> iRépare Amiens.</div>
+      <div>Mentions légales · Politique de confidentialité</div>
+    </div>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</footer>
+</body>
+</html>

@@ -1,317 +1,91 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <title>iRépare Amiens - Accueil</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>iRépare Amiens – Réparation smartphone, tablette & PC</title>
-  <meta name="description" content="iRépare Amiens : réparation rapide et garantie de smartphones, tablettes et ordinateurs. Devis gratuit en 15 min, pièces de qualité, récupération de données, changement écran & batterie.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <!-- TailwindCSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    :root{--brand:#0ea5e9;--brandDark:#0284c7}
-    html{scroll-behavior:smooth}
-    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial,"Noto Sans","Apple Color Emoji","Segoe UI Emoji"}
-    .glass{backdrop-filter:saturate(160%) blur(8px)}
-    .container{max-width:1200px}
-  </style>
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"LocalBusiness",
-    "name":"iRépare Amiens",
-    "image":"",
-    "description":"Atelier de réparation smartphone, tablette et PC à Amiens. Devis gratuit, pièces de qualité, garantie main-d'œuvre.",
-    "address":{
-      "@type":"PostalAddress",
-      "streetAddress":"[À compléter]",
-      "addressLocality":"Amiens",
-      "postalCode":"80000",
-      "addressCountry":"FR"
-    },
-    "telephone":"[À compléter]",
-    "url":"https://irepare-amiens.example",
-    "openingHours":[
-      "Mo-Fr 13:15-21:00",
-      "Sa 09:00-17:25"
-    ],
-    "areaServed":"Amiens et alentours",
-    "sameAs":[]
-  }
-  </script>
+  <meta name="description" content="iRépare Amiens, réparation de smartphones, tablettes et ordinateurs à domicile à Amiens et alentours.">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-slate-50 text-slate-800">
-  <!-- Header -->
-  <header class="sticky top-0 z-40 bg-white/80 glass border-b border-slate-200">
-    <div class="container mx-auto px-4 py-3 flex items-center justify-between">
-      <a href="#" class="flex items-center gap-2">
-        <div class="h-9 w-9 rounded-xl bg-sky-500 grid place-content-center text-white font-black">iR</div>
-        <span class="font-extrabold tracking-tight text-slate-900">iRépare <span class="text-sky-600">Amiens</span></span>
+<body>
+<header>
+  <div class="container">
+    <nav class="nav">
+      <div class="logo-area">
+        <img src="images/logo-irepare.png" alt="iRépare Amiens" class="logo-img">
+        <div class="logo-text">iRépare Amiens</div>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="services.html">Services</a>
+        <a href="tarifs.html">Tarifs</a>
+        <a href="rdv.html">Rendez-vous</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <a class="btn-nav" href="mailto:irepare.amiens@gmail.com">
+        ✉️ Écrire
       </a>
-      <nav class="hidden md:flex items-center gap-6 text-sm">
-        <a href="#services" class="hover:text-sky-600">Services</a>
-        <a href="#tarifs" class="hover:text-sky-600">Tarifs</a>
-        <a href="#avis" class="hover:text-sky-600">Avis</a>
-        <a href="#faq" class="hover:text-sky-600">FAQ</a>
-        <a href="#contact" class="hover:text-sky-600">Contact</a>
-      </nav>
-      <a href="#contact" class="inline-flex items-center gap-2 rounded-xl bg-sky-600 px-4 py-2 text-white text-sm font-semibold shadow-sm hover:bg-sky-700">
-        Devis gratuit
-      </a>
-    </div>
-  </header>
+    </nav>
+  </div>
+</header>
 
-  <!-- Hero -->
-  <section class="relative overflow-hidden">
-    <div class="absolute inset-0 -z-10 bg-gradient-to-br from-sky-50 via-white to-slate-50"></div>
-    <div class="container mx-auto px-4 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
+<main>
+  <div class="container hero">
+    <div class="hero-grid">
       <div>
-        <h1 class="text-3xl md:text-5xl font-extrabold leading-tight text-slate-900">
-          Réparation <span class="text-sky-600">rapide & garantie</span><br>smartphones, tablettes & PC
-        </h1>
-        <p class="mt-4 text-slate-600 md:text-lg">Diagnostic immédiat, pièces de qualité, transparence totale. Donnez une seconde vie à vos appareils à Amiens.</p>
-        <div class="mt-6 flex flex-wrap gap-3">
-          <a href="#contact" class="rounded-xl bg-sky-600 text-white px-5 py-3 font-semibold hover:bg-sky-700">Prendre rendez‑vous</a>
-          <a href="#services" class="rounded-xl border border-slate-300 px-5 py-3 font-semibold hover:border-sky-400 hover:text-sky-700">Voir les services</a>
-        </div>
-        <ul class="mt-6 grid gap-2 text-sm text-slate-600">
-          <li>✔️ Devis gratuit en 15 min</li>
-          <li>✔️ Garantie main‑d’œuvre</li>
-          <li>✔️ Sauvegarde & récupération de données</li>
-        </ul>
-      </div>
-      <div class="relative">
-        <div class="aspect-[4/3] rounded-2xl bg-white border border-slate-200 shadow-lg p-6">
-          <div class="grid grid-cols-3 gap-4">
-            <div class="h-28 rounded-xl bg-slate-100"></div>
-            <div class="h-28 rounded-xl bg-slate-100"></div>
-            <div class="h-28 rounded-xl bg-slate-100"></div>
-            <div class="h-28 rounded-xl bg-slate-100"></div>
-            <div class="h-28 rounded-xl bg-slate-100"></div>
-            <div class="h-28 rounded-xl bg-slate-100"></div>
-          </div>
-          <p class="mt-4 text-center text-sm text-slate-500">(Ajoutez vos photos avant/après ici)</p>
-        </div>
-      </div>
-    </div>
-  </section>
+        <h1>Réparation à domicile de vos <span>smartphones, tablettes et ordinateurs</span>.</h1>
+        <p class="hero-subtitle">
+          iRépare Amiens se déplace chez vous ou sur votre lieu de travail à Amiens et alentours :
+          écrans cassés, batteries, problèmes de son, connecteurs, lenteurs, sauvegarde et récupération de données.
+        </p>
 
-  <!-- Badges -->
-  <section class="container mx-auto px-4 pb-10 -mt-6">
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-      <div class="rounded-xl border border-slate-200 bg-white p-4 text-center text-sm">Pièces premium</div>
-      <div class="rounded-xl border border-slate-200 bg-white p-4 text-center text-sm">Garantie main‑d’œuvre</div>
-      <div class="rounded-xl border border-slate-200 bg-white p-4 text-center text-sm">Devis gratuit</div>
-      <div class="rounded-xl border border-slate-200 bg-white p-4 text-center text-sm">Interventions rapides</div>
-    </div>
-  </section>
+        <div class="hero-badges">
+          <div class="hero-badge">✔ Déplacement à domicile</div>
+          <div class="hero-badge">✔ Pièces de qualité</div>
+          <div class="hero-badge">✔ Garantie sur les réparations</div>
+        </div>
 
-  <!-- Services -->
-  <section id="services" class="py-16 bg-white">
-    <div class="container mx-auto px-4">
-      <h2 class="text-2xl md:text-3xl font-bold text-slate-900">Nos services</h2>
-      <p class="mt-2 text-slate-600">Pour particuliers et professionnels. Si votre panne n’est pas listée, demandez‑nous.</p>
-      <div class="mt-8 grid md:grid-cols-3 gap-6">
-        <article class="rounded-2xl border border-slate-200 p-6 shadow-sm">
-          <h3 class="font-semibold text-lg">Écrans & batteries</h3>
-          <p class="mt-2 text-sm text-slate-600">Remplacement d’écrans fissurés, LCD/OLED, batteries usées, connecteurs de charge et boutons.</p>
-          <ul class="mt-3 text-sm text-slate-600 space-y-1">
-            <li>• iPhone, Samsung, Xiaomi, etc.</li>
-            <li>• Tablettes iPad & Android</li>
-            <li>• PC portables (clavier, charnières)</li>
-          </ul>
-        </article>
-        <article class="rounded-2xl border border-slate-200 p-6 shadow-sm">
-          <h3 class="font-semibold text-lg">Diagnostic & carte mère</h3>
-          <p class="mt-2 text-sm text-slate-600">Diagnostic précis, micro‑soudure, réparations carte mère, problèmes d’eau, surchauffe.</p>
-          <ul class="mt-3 text-sm text-slate-600 space-y-1">
-            <li>• Pas de frais si réparation acceptée</li>
-            <li>• Rapport clair & options</li>
-            <li>• Conseils d’entretien</li>
-          </ul>
-        </article>
-        <article class="rounded-2xl border border-slate-200 p-6 shadow-sm">
-          <h3 class="font-semibold text-lg">Logiciel & données</h3>
-          <p class="mt-2 text-sm text-slate-600">Sauvegarde, récupération, réinstallation, suppression virus, optimisation & nettoyage.</p>
-          <ul class="mt-3 text-sm text-slate-600 space-y-1">
-            <li>• Migration iOS/Android</li>
-            <li>• Sauvegarde WhatsApp/Photos</li>
-            <li>• Mise à jour & optimisation</li>
-          </ul>
-        </article>
-      </div>
-    </div>
-  </section>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="mailto:irepare.amiens@gmail.com?subject=Demande%20de%20devis%20iRépare%20Amiens">
+            ✉ Demander un devis par mail
+          </a>
+          <a class="btn btn-secondary" href="rdv.html">
+            📅 Demander un rendez-vous
+          </a>
+        </div>
 
-  <!-- Tarifs -->
-  <section id="tarifs" class="py-16 bg-slate-50">
-    <div class="container mx-auto px-4">
-      <h2 class="text-2xl md:text-3xl font-bold text-slate-900">Tarifs indicatifs</h2>
-      <p class="mt-2 text-slate-600">Prix variables selon modèle & disponibilité des pièces. Devis exact communiqué avant intervention.</p>
-      <div class="mt-8 grid md:grid-cols-3 gap-6">
-        <div class="rounded-2xl bg-white border border-slate-200 p-6 shadow-sm">
-          <h3 class="font-semibold">Smartphones</h3>
-          <ul class="mt-3 text-sm text-slate-700 space-y-2">
-            <li>• Changement écran : <span class="font-semibold">à partir de 69€</span></li>
-            <li>• Batterie : <span class="font-semibold">à partir de 39€</span></li>
-            <li>• Connecteur/haut‑parleur : <span class="font-semibold">dès 29€</span></li>
-          </ul>
-        </div>
-        <div class="rounded-2xl bg-white border border-slate-200 p-6 shadow-sm">
-          <h3 class="font-semibold">Tablettes</h3>
-          <ul class="mt-3 text-sm text-slate-700 space-y-2">
-            <li>• Écran/tactile : <span class="font-semibold">dès 89€</span></li>
-            <li>• Batterie : <span class="font-semibold">dès 59€</span></li>
-            <li>• Port de charge : <span class="font-semibold">dès 49€</span></li>
-          </ul>
-        </div>
-        <div class="rounded-2xl bg-white border border-slate-200 p-6 shadow-sm">
-          <h3 class="font-semibold">Ordinateurs</h3>
-          <ul class="mt-3 text-sm text-slate-700 space-y-2">
-            <li>• Remplacement écran : <span class="font-semibold">dès 129€</span></li>
-            <li>• SSD + clonage : <span class="font-semibold">dès 99€</span></li>
-            <li>• Nettoyage/optimisation : <span class="font-semibold">dès 49€</span></li>
-          </ul>
-        </div>
+        <p class="hero-note">
+          Indiquez votre modèle, la panne et votre adresse dans votre message pour une réponse plus rapide.
+        </p>
       </div>
-      <div class="mt-6 text-sm text-slate-500">*Les tarifs ci‑dessus sont fournis à titre indicatif et pourront être ajustés après diagnostic.</div>
-    </div>
-  </section>
 
-  <!-- Avis -->
-  <section id="avis" class="py-16 bg-white">
-    <div class="container mx-auto px-4">
-      <h2 class="text-2xl md:text-3xl font-bold text-slate-900">Ils nous font confiance</h2>
-      <div class="mt-8 grid md:grid-cols-3 gap-6">
-        <figure class="rounded-2xl border border-slate-200 p-6 bg-slate-50">
-          <blockquote class="text-slate-700">“Écran iPhone réparé en moins d’une heure, super pro et très clair sur les options.”</blockquote>
-          <figcaption class="mt-3 text-sm text-slate-500">— Client Google</figcaption>
-        </figure>
-        <figure class="rounded-2xl border border-slate-200 p-6 bg-slate-50">
-          <blockquote class="text-slate-700">“Sauvegarde de mes photos récupérée, merci pour la patience et les explications.”</blockquote>
-          <figcaption class="mt-3 text-sm text-slate-500">— Cliente satisfaite</figcaption>
-        </figure>
-        <figure class="rounded-2xl border border-slate-200 p-6 bg-slate-50">
-          <blockquote class="text-slate-700">“Tarifs honnêtes, devis gratuit et respecté. Je recommande.”</blockquote>
-          <figcaption class="mt-3 text-sm text-slate-500">— Professionnel local</figcaption>
-        </figure>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section id="faq" class="py-16 bg-slate-50">
-    <div class="container mx-auto px-4">
-      <h2 class="text-2xl md:text-3xl font-bold text-slate-900">Questions fréquentes</h2>
-      <div class="mt-6 grid md:grid-cols-2 gap-6">
-        <details class="rounded-xl border border-slate-200 bg-white p-5">
-          <summary class="cursor-pointer font-semibold">Combien de temps prend la réparation ?</summary>
-          <p class="mt-2 text-sm text-slate-600">La plupart des réparations simples se font dans la journée. Les interventions carte mère peuvent nécessiter 24–72h.</p>
-        </details>
-        <details class="rounded-xl border border-slate-200 bg-white p-5">
-          <summary class="cursor-pointer font-semibold">Proposez‑vous une garantie ?</summary>
-          <p class="mt-2 text-sm text-slate-600">Oui, garantie sur la main‑d’œuvre et les pièces selon le type d’intervention. Les détails sont mentionnés sur le devis.</p>
-        </details>
-        <details class="rounded-xl border border-slate-200 bg-white p-5">
-          <summary class="cursor-pointer font-semibold">Puis‑je obtenir un devis gratuit ?</summary>
-          <p class="mt-2 text-sm text-slate-600">Bien sûr. Présentez l’appareil en boutique ou contactez‑nous avec le modèle et le symptôme pour un chiffrage rapide.</p>
-        </details>
-        <details class="rounded-xl border border-slate-200 bg-white p-5">
-          <summary class="cursor-pointer font-semibold">Intervenez‑vous pour les pros ?</summary>
-          <p class="mt-2 text-sm text-slate-600">Oui, solutions sur mesure (contrats, facturation, flotte d’appareils, urgences, enlèvement sur site selon zone).</p>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact / Horaires / Carte -->
-  <section id="contact" class="py-16 bg-white">
-    <div class="container mx-auto px-4">
-      <h2 class="text-2xl md:text-3xl font-bold text-slate-900">Contact & horaires</h2>
-      <div class="mt-8 grid lg:grid-cols-3 gap-8">
-        <div class="rounded-2xl border border-slate-200 p-6 bg-slate-50">
-          <h3 class="font-semibold">Coordonnées</h3>
-          <ul class="mt-3 text-sm text-slate-700 space-y-2">
-            <li>📍 <span class="font-medium">Adresse :</span> [À compléter], 80000 Amiens</li>
-            <li>☎️ <span class="font-medium">Téléphone :</span> [À compléter]</li>
-            <li>✉️ <span class="font-medium">Email :</span> contact@irepare.example</li>
-            <li>🕸️ <span class="font-medium">Réseaux :</span> [Instagram] [Facebook] [Google]</li>
-          </ul>
-          <a href="#" class="mt-4 inline-flex w-full items-center justify-center rounded-xl bg-sky-600 px-5 py-3 font-semibold text-white hover:bg-sky-700">Demander un devis</a>
-          <p class="mt-2 text-xs text-slate-500">Ou envoyez un message WhatsApp : [lien WhatsApp]</p>
-        </div>
-        <div class="rounded-2xl border border-slate-200 p-6 bg-slate-50">
-          <h3 class="font-semibold">Horaires</h3>
-          <table class="mt-3 w-full text-sm">
-            <tbody class="text-slate-700">
-              <tr><td class="py-1">Lun</td><td class="py-1">13:15 – 21:00</td></tr>
-              <tr><td class="py-1">Mar</td><td class="py-1">13:15 – 21:00</td></tr>
-              <tr><td class="py-1">Mer</td><td class="py-1">13:15 – 21:00</td></tr>
-              <tr><td class="py-1">Jeu</td><td class="py-1">13:45 – 20:55</td></tr>
-              <tr><td class="py-1">Ven</td><td class="py-1">13:15 – 21:00</td></tr>
-              <tr><td class="py-1">Sam</td><td class="py-1">09:00 – 17:25</td></tr>
-              <tr><td class="py-1">Dim</td><td class="py-1">Fermé</td></tr>
-            </tbody>
-          </table>
-          <p class="mt-3 text-xs text-slate-500">Horaires ajustables sur rendez‑vous pour urgences pro.</p>
-        </div>
-        <div class="rounded-2xl overflow-hidden border border-slate-200">
-          <!-- Remplacez la source par la carte de votre adresse exacte -->
-          <iframe title="Carte iRépare Amiens" class="w-full h-full min-h-[320px]" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"
-            src="https://www.google.com/maps?q=Amiens,France&output=embed"></iframe>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA final -->
-  <section class="py-16">
-    <div class="container mx-auto px-4">
-      <div class="rounded-3xl bg-gradient-to-br from-sky-600 to-sky-700 p-8 md:p-12 text-white shadow-xl">
-        <h2 class="text-2xl md:text-3xl font-extrabold">Besoin d’une réparation aujourd’hui ?</h2>
-        <p class="mt-2 text-white/90">Contactez‑nous pour un devis gratuit et une intervention rapide. On s’occupe du reste.</p>
-        <div class="mt-6 flex flex-wrap gap-3">
-          <a href="#contact" class="rounded-xl bg-white text-sky-700 px-5 py-3 font-semibold">Je demande un devis</a>
-          <a href="#tarifs" class="rounded-xl border border-white/30 px-5 py-3 font-semibold">Voir les tarifs</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="border-t border-slate-200 py-10 bg-white">
-    <div class="container mx-auto px-4 grid md:grid-cols-3 gap-6 text-sm">
-      <div>
-        <div class="flex items-center gap-2">
-          <div class="h-8 w-8 rounded-lg bg-sky-500 grid place-content-center text-white font-black">iR</div>
-          <span class="font-bold">iRépare Amiens</span>
-        </div>
-        <p class="mt-3 text-slate-600">Réparations rapides et garanties. Devis gratuit. Pièces de qualité.</p>
-      </div>
-      <div>
-        <h4 class="font-semibold">Légal</h4>
-        <ul class="mt-2 space-y-1 text-slate-600">
-          <li><a href="#" class="hover:text-sky-700">Mentions légales</a></li>
-          <li><a href="#" class="hover:text-sky-700">CGV</a></li>
-          <li><a href="#" class="hover:text-sky-700">Politique de confidentialité</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="font-semibold">Contact</h4>
-        <ul class="mt-2 space-y-1 text-slate-600">
-          <li>Email : contact@irepare.example</li>
-          <li>Tél. : [À compléter]</li>
-          <li>Amiens, 80000</li>
+      <div class="card">
+        <h3>Interventions fréquentes</h3>
+        <p style="font-size:0.85rem;color:#6b7280;margin-bottom:8px;">
+          Quelques exemples de réparations réalisées chez les clients :
+        </p>
+        <ul>
+          <li>Remplacement d’écran iPhone ou Samsung</li>
+          <li>Changement de batterie (téléphone ou tablette)</li>
+          <li>PC ou Mac très lent à démarrer</li>
+          <li>Problème de charge ou de son</li>
+          <li>Récupération de photos sur téléphone cassé</li>
         </ul>
       </div>
     </div>
-    <div class="mt-6 text-center text-xs text-slate-500">© <span id="y"></span> iRépare Amiens — Tous droits réservés.</div>
-  </footer>
+  </div>
+</main>
 
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div>© <span id="year"></span> iRépare Amiens. Tous droits réservés.</div>
+      <div>Mentions légales · Politique de confidentialité</div>
+    </div>
+  </div>
   <script>
-    document.getElementById('y').textContent = new Date().getFullYear()
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
+</footer>
 </body>
 </html>

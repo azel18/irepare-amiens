@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>iRépare Amiens - Contact & Infos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav class="nav">
+      <div class="logo-area">
+        <img src="images/logo-irepare.png" alt="iRépare Amiens" class="logo-img">
+        <div class="logo-text">iRépare Amiens</div>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="services.html">Services</a>
+        <a href="tarifs.html">Tarifs</a>
+        <a href="rdv.html">Rendez-vous</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <a class="btn-nav" href="mailto:irepare.amiens@gmail.com">✉️ Écrire</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <section>
+      <h2>Contact & infos</h2>
+      <p class="section-intro">
+        iRépare Amiens se déplace chez les particuliers et professionnels à Amiens et alentours,
+        sur rendez-vous uniquement.
+      </p>
+
+      <div class="contact-box">
+        <div class="contact-row">
+          <div class="contact-label">E-mail</div>
+          <div>
+            <a href="mailto:irepare.amiens@gmail.com"><strong>irepare.amiens@gmail.com</strong></a>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-label">Zone d'intervention</div>
+          <div>
+            Amiens (80000) et communes proches  
+            (déplacement à domicile ou sur lieu de travail).
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-label">Type d’activité</div>
+          <div>
+            Atelier mobile · Réparation de smartphones, tablettes et ordinateurs à domicile.
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-label">Horaires indicatifs</div>
+          <div>
+            Sur rendez-vous principalement :<br>
+            Lundi - Vendredi : fin de journée et soirée<br>
+            Samedi : journée<br>
+            Dimanche : fermé
+          </div>
+        </div>
+      </div>
+
+      <p style="margin-top:12px;font-size:0.87rem;">
+        Pour prendre rendez-vous ou demander un devis, pensez à indiquer :  
+        le modèle de l’appareil, le problème rencontré et votre adresse.
+      </p>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div>© <span id="year"></span> iRépare Amiens.</div>
+      <div>Mentions légales · Politique de confidentialité</div>
+    </div>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</footer>
+</body>
+</html>

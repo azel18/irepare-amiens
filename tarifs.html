@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>iRépare Amiens - Tarifs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav class="nav">
+      <div class="logo-area">
+        <img src="images/logo-irepare.png" alt="iRépare Amiens" class="logo-img">
+        <div class="logo-text">iRépare Amiens</div>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="services.html">Services</a>
+        <a href="tarifs.html">Tarifs</a>
+        <a href="rdv.html">Rendez-vous</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <a class="btn-nav" href="mailto:irepare.amiens@gmail.com">✉️ Écrire</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <section>
+      <h2>Tarifs indicatifs</h2>
+      <p class="section-intro">
+        Les tarifs peuvent varier selon le modèle de l’appareil et le coût des pièces.  
+        Devis personnalisé envoyé par mail avant toute intervention.
+      </p>
+
+      <table class="tarif-table">
+        <thead>
+        <tr>
+          <th>Intervention</th>
+          <th>Type d'appareil</th>
+          <th class="price">À partir de</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Remplacement écran</td>
+          <td>Smartphone</td>
+          <td class="price">59 €</td>
+        </tr>
+        <tr>
+          <td>Changement de batterie</td>
+          <td>Smartphone</td>
+          <td class="price">39 €</td>
+        </tr>
+        <tr>
+          <td>Connecteur de charge / son</td>
+          <td>Smartphone / tablette</td>
+          <td class="price">45 €</td>
+        </tr>
+        <tr>
+          <td>Écran / vitre</td>
+          <td>Tablette</td>
+          <td class="price">79 €</td>
+        </tr>
+        <tr>
+          <td>Installation Windows + optimisation</td>
+          <td>PC portable</td>
+          <td class="price">69 €</td>
+        </tr>
+        <tr>
+          <td>Passage en disque SSD</td>
+          <td>PC / Mac</td>
+          <td class="price">99 €</td>
+        </tr>
+        <tr>
+          <td>Récupération de données simple</td>
+          <td>Téléphone / support externe</td>
+          <td class="price">49 €</td>
+        </tr>
+        </tbody>
+      </table>
+
+      <p style="font-size:0.85rem;color:#6b7280;margin-top:10px;">
+        Diagnostic simple offert. Diagnostic complexe (démontage avancé) possible selon le cas,
+        montant déduit si la réparation est acceptée.
+      </p>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div>© <span id="year"></span> iRépare Amiens.</div>
+      <div>Mentions légales · Politique de confidentialité</div>
+    </div>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</footer>
+</body>
+</html>

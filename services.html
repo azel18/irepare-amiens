@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>iRépare Amiens - Services</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav class="nav">
+      <div class="logo-area">
+        <img src="images/logo-irepare.png" alt="iRépare Amiens" class="logo-img">
+        <div class="logo-text">iRépare Amiens</div>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="services.html">Services</a>
+        <a href="tarifs.html">Tarifs</a>
+        <a href="rdv.html">Rendez-vous</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <a class="btn-nav" href="mailto:irepare.amiens@gmail.com">✉️ Écrire</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <section>
+      <h2>Services de réparation à domicile</h2>
+      <p class="section-intro">
+        iRépare se déplace chez vous à Amiens et dans les environs pour réparer vos appareils sur place
+        ou récupérer le matériel à réparer.
+      </p>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Smartphones</h3>
+          <p>Apple, Samsung, Xiaomi, Huawei, Oppo, etc.</p>
+          <ul>
+            <li>Remplacement d'écran / vitre</li>
+            <li>Changement de batterie</li>
+            <li>Connecteur de charge, micro, haut-parleur</li>
+            <li>Caméras avant / arrière</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Tablettes</h3>
+          <p>iPad et tablettes Android.</p>
+          <ul>
+            <li>Écran et tactile</li>
+            <li>Problèmes de charge</li>
+            <li>Batterie</li>
+            <li>Diagnostic des lenteurs</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Ordinateurs & Mac</h3>
+          <p>Pour un usage pro ou perso.</p>
+          <ul>
+            <li>Nettoyage & optimisation</li>
+            <li>Passage en disque SSD</li>
+            <li>Réinstallation Windows / macOS</li>
+            <li>Suppression virus / malwares</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Récupération de données</h3>
+          <p>Quand l’appareil ne s’allume plus ou est très abîmé.</p>
+          <ul>
+            <li>Téléphones cassés</li>
+            <li>Disques durs, clés USB</li>
+            <li>Cartes SD</li>
+            <li>Transfert vers un nouvel appareil</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Conseils & accompagnement</h3>
+          <ul>
+            <li>Conseil achat smartphone / PC</li>
+            <li>Configuration et sauvegarde</li>
+            <li>Paramétrage mails, applis, cloud</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Professionnels & TPE</h3>
+          <ul>
+            <li>Maintenance de base du parc</li>
+            <li>Réparations prioritaires</li>
+            <li>Factures détaillées</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div>© <span id="year"></span> iRépare Amiens.</div>
+      <div>Mentions légales · Politique de confidentialité</div>
+    </div>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</footer>
+</body>
+</html>
