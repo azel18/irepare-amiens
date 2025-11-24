@@ -167,6 +167,37 @@ section h2 { font-size:1.55rem; margin-bottom:8px; }
 
 .tarif-aside-image { border-radius:16px; overflow:hidden; box-shadow:var(--shadow); }
 
+/* Payment box */
+
+.payment-box {
+  margin-top:20px;
+  background:var(--white);
+  border-radius:var(--radius);
+  padding:14px;
+  box-shadow:0 6px 16px rgba(15,23,42,0.05);
+  border:1px solid rgba(148,163,184,0.35);
+  font-size:0.88rem;
+}
+
+.payment-box h3 {
+  font-size:1rem;
+  margin-bottom:6px;
+}
+
+.payment-tags {
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin:8px 0;
+}
+
+.payment-tag {
+  padding:4px 10px;
+  border-radius:999px;
+  border:1px solid rgba(148,163,184,0.7);
+  font-size:0.78rem;
+}
+
 /* Form */
 
 .form-card {

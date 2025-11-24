@@ -31,13 +31,22 @@
     <section>
       <h2>Demande de rendez-vous ou de devis</h2>
       <p class="section-intro">
-        Remplissez ce formulaire ou envoyez directement un mail à
+        Utilisez ce formulaire comme modèle pour votre demande, puis envoyez-la par mail à
         <strong><a href="mailto:irepare.amiens@gmail.com">irepare.amiens@gmail.com</a></strong>.
+        Plus vous donnez de détails, plus le devis sera précis.
       </p>
 
       <div class="form-card">
         <form>
           <div class="form-grid">
+            <div class="form-group">
+              <label for="type-demande">Type de demande</label>
+              <select id="type-demande">
+                <option>Demande de devis</option>
+                <option>Prise de rendez-vous à domicile</option>
+                <option>Demande d'informations</option>
+              </select>
+            </div>
             <div class="form-group">
               <label for="nom">Nom / Prénom</label>
               <input id="nom" type="text" placeholder="Ex : Dupont Karim">
@@ -62,26 +71,30 @@
             </div>
             <div class="form-group">
               <label for="modele">Modèle</label>
-              <input id="modele" type="text" placeholder="Ex : iPhone 12, Samsung A52...">
+              <input id="modele" type="text" placeholder="Ex : iPhone 12, Samsung A52, HP Pavilion...">
             </div>
             <div class="form-group">
-              <label for="date">Jour souhaité</label>
+              <label for="disponibilites">Vos disponibilités</label>
+              <input id="disponibilites" type="text" placeholder="Ex : Soir après 18h, mercredi après-midi, samedi matin...">
+            </div>
+            <div class="form-group">
+              <label for="date">Jour souhaité (optionnel)</label>
               <input id="date" type="date">
             </div>
           </div>
 
           <div class="form-group" style="margin-top:10px;">
             <label for="probleme">Décrivez le problème</label>
-            <textarea id="probleme" placeholder="Écran cassé, ne charge plus, problème de son, appareil qui ne s'allume plus, etc."></textarea>
+            <textarea id="probleme" placeholder="Ex : Écran cassé, téléphone qui ne s'allume plus, batterie qui se vide très vite, PC très lent, etc."></textarea>
           </div>
 
           <div class="form-footer">
             <button type="button" class="btn btn-primary">
-              ✉ Envoyer la demande (à connecter plus tard)
+              ✉ Copier ces infos dans mon mail
             </button>
             <span>
-              Ce formulaire est visuel pour l’instant.  
-              Pour une vraie demande, envoyez un mail à <strong>irepare.amiens@gmail.com</strong>.
+              Ce formulaire est un exemple de contenu.  
+              Envoyez ensuite votre message à <strong>irepare.amiens@gmail.com</strong> pour recevoir votre devis.
             </span>
           </div>
         </form>
