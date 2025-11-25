@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>iRépare Amiens - Tarifs</title>
+  <title>iRépare Amiens - Tarifs & Paiement sécurisé</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -29,7 +29,7 @@
 <main>
   <div class="container">
     <section>
-      <h2>Tarifs indicatifs</h2>
+      <h2>Tarifs indicatifs & paiement sécurisé</h2>
       <p class="section-intro">
         Les tarifs peuvent varier selon le modèle de l’appareil et le coût des pièces.  
         Un devis détaillé vous est envoyé par mail avant chaque intervention.
@@ -93,13 +93,34 @@
             <h3>Moyens de paiement acceptés</h3>
             <div class="payment-tags">
               <span class="payment-tag">💶 Espèces</span>
-              <span class="payment-tag">💳 Carte bancaire</span>
+              <span class="payment-tag">💳 Carte bancaire (Stripe)</span>
               <span class="payment-tag">🏦 Virement bancaire</span>
               <span class="payment-tag">📲 Paiement mobile (type Lydia / Paylib)</span>
             </div>
             <p>
               Le règlement s’effectue en fin d’intervention, une facture peut être fournie sur demande.
-              Pour les grosses réparations ou commandes de pièces spécifiques, un acompte peut être demandé.
+              Pour certaines réparations, un acompte en ligne peut être demandé.
+            </p>
+
+            <div class="payment-actions">
+              <a id="btn-acompte-stripe"
+                 class="btn btn-primary"
+                 href="https://buy.stripe.com/eVqdR9fgebDu91mg8dbEA00"
+                 target="_blank" rel="noopener noreferrer">
+                💳 Payer un acompte en ligne
+              </a>
+
+              <a id="btn-facture-stripe"
+                 class="btn btn-secondary"
+                 href="https://buy.stripe.com/eVqdR9fgebDu91mg8dbEA00"
+                 target="_blank" rel="noopener noreferrer">
+                ✅ Régler ma facture en ligne
+              </a>
+            </div>
+
+            <p style="font-size:0.8rem;margin-top:6px;color:#6b7280;">
+              Les paiements en ligne sont traités de manière sécurisée via Stripe.  
+              Aucune donnée de carte bancaire n’est stockée sur le site iRépare Amiens.
             </p>
           </div>
         </div>

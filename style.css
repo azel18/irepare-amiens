@@ -198,6 +198,13 @@ section h2 { font-size:1.55rem; margin-bottom:8px; }
   font-size:0.78rem;
 }
 
+.payment-actions {
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-top:10px;
+}
+
 /* Form */
 
 .form-card {
