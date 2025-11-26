@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <header>
   <div class="container">
     <nav class="nav">
@@ -15,6 +16,15 @@
         <img src="images/logo-irepare.png" alt="Logo iRépare Amiens" class="logo-img">
         <div class="logo-text">iRépare Amiens</div>
       </div>
+
+      <button class="nav-toggle" aria-label="Basculer le menu">
+        <div class="nav-toggle-box">
+          <div class="nav-toggle-line"></div>
+          <div class="nav-toggle-line"></div>
+          <div class="nav-toggle-line"></div>
+        </div>
+      </button>
+
       <div class="nav-links">
         <a href="index.html">Accueil</a>
         <a href="services.html">Services</a>
@@ -22,9 +32,8 @@
         <a href="rdv.html">Rendez-vous</a>
         <a href="contact.html">Contact</a>
       </div>
-      <a class="btn-nav" href="mailto:irepare.amiens@gmail.com">
-        ✉️ Écrire
-      </a>
+
+      <a class="btn-nav" href="mailto:irepare.amiens@gmail.com">✉️ Écrire</a>
     </nav>
   </div>
 </header>
@@ -69,13 +78,23 @@
 <footer>
   <div class="container">
     <div class="footer-inner">
-      <div>© <span id="year"></span> iRépare Amiens. Tous droits réservés.</div>
+      <div>© <span id="year"></span> iRépare Amiens.</div>
       <div>Mentions légales · Politique de confidentialité</div>
     </div>
   </div>
   <script>
+    // année
     document.getElementById('year').textContent = new Date().getFullYear();
+    // menu mobile
+    const nav = document.querySelector('.nav');
+    const toggle = document.querySelector('.nav-toggle');
+    if (toggle && nav) {
+      toggle.addEventListener('click', () => {
+        nav.classList.toggle('nav-open');
+      });
+    }
   </script>
 </footer>
+
 </body>
 </html>
